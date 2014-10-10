@@ -11,7 +11,6 @@ class Model < Ohm::Model
   include Ohm::Default
 
   attribute :name
-
-  default :name, "Wolfgang"
+  default   :name, "Wolfgang"
 end
 ```
