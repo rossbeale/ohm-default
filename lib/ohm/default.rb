@@ -8,8 +8,8 @@ module Ohm::Default
       @default_attributes ||= {}
     end
 
-    def default(key, value)
-      default_attributes[key] = value
+    def default(name, value)
+      default_attributes[name] = value if attributes.include?(name)
     end
   end
 

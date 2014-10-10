@@ -10,6 +10,8 @@ gem install ohm-default
 class Model < Ohm::Model
   include Ohm::Default
 
-  default :attribute, "value"
+  attribute :name
+
+  default :name, "Wolfgang"
 end
 ```
